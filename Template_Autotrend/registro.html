@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" contente="width-device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registrar</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="bibliotecas/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/sb-admin.min.css" type="text/css">
+    <style type="text/css">
+        .todo{
+            background-image: url(/img/fundo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .alt { 
+          padding: 20px;
+        }
+    </style>
+</head>
+<body class="todo">
+    <div class="container alt">
+        <!--mx-auto: centralizar horizontal-->
+        <!--mt-5: margem do topo-->
+        <div class="card card-register mx-auto mt-5 bg-light border-0">
+            <div class="card-header text-white bg-dark"><h5>Registrar-se</h5></div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-left small mb-4 mt-1">
+                            Já possui uma conta? Faça o <a href="#" class="d-inline mt-3 text-info">
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6 mb-1">
+                                <label for="primeiroNome" class="">Nome</label>
+                                <input type="text" class="form-control" name="primeiroNome" id="primeiroNome" placeholder="Digite seu nome">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="segundoNome" class="">Sobrenome</label>
+                                <input type="text" class="form-control" name="segundoNome" id="segundoNome" placeholder="Digite seu sobrenome">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <label for="email" class="">E-mail</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu e-mail">
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="senha" class="">Senha</label>
+                                <input type="password" class="form-control" name="senha" id="senha" placeholder="Digite uma senha">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="confirmaSenha" class="">Confirmar Senha</label>
+                                <input type="text" class="form-control" name="confirmaSenha" id="confirmaSenha" placeholder="Digite a senha novamente">
+                            </div>
+                        </div>
+                    </div>                    
+                    <button class="btn btn-success btn-block mt-4 mb-2">Registrar-se</button>                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="bibliotecas/jquery/jquery.min.js"></script>
+    <script src="bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bibliotecas/jquery-easing/jquery.easing.min.js"></script>
+</body>
+</html>
