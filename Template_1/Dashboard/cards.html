@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" contente="width-device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cards</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.min.css" type="text/css">
+    <!--iconic-->
+    <link rel="stylesheet" href="bibliotecas/open-iconic-master/font/css/open-iconic-bootstrap.css" type="text/css">
+    <!--Awesome-->
+    <link rel="stylesheet" href="bibliotecas/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/sb-admin.min.css" type="text/css">
+    <style type="text/css">
+        .todo{
+            background-image: url(/img/fundo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-dark fixed-nav sticky-footer" id="page-top">
+<!--navegação-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <a class="navbar-brand" href="index.html">
+                <h5>
+                <img src="/img/logos.png" width="25" height="28" class="d-inline-block align-top">
+                AutoTrend</h5>
+            </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
+            data-target="#navbarAutotrend" aria-control="navbarAutotrend" aria-expanded="false" aria-label="Navegação toogle">
+                <span class="navbar-toggler-icon small"></span>
+            </button>
+            <div id="navbarAutotrend" class="collapse navbar-collapse">
+<!--barra de menu-->
+                <ul class="navbar-nav navbar-sidenav" id="linkAccordion">
+                    <!--Collapse-->
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link nav-link-collapse collapse" href="#linkPaginas" data-toggle="collapse" data-parent="#linkAccordion">
+                            <i class="oi oi-person"></i>
+                            <span class="nav-link-text">Paginas</span>
+                        </a>
+                        <!--submenu-->
+                        <ul class="sidenav-second-level collapse" id="linkPaginas">
+                            <li>
+                                <a href="login.html" class="">Login</a>
+                            </li>
+                            <li>
+                                <a href="registro.html" class="">Registro</a>
+                            </li>
+                            <li>
+                                <a href="recuperar.html" class="">Recuperar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--sub-sub menu-->    
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                        <a class="nav-link nav-link-collapse collapse" href="#linkComp" data-toggle="collapse" data-parent="#linkAccordion">
+                            <i class="oi oi-bar-chart"></i>
+                            <span class="nav-link-text">Componentes</span>
+                        </a>
+                        <!--submenu-->
+                        <ul class="sidenav-second-level collapse" id="linkComp">
+                            <li>
+                                <a href="#" class="">Componente 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Componente 2</a>
+                            </li>
+                            <li>
+                                <a class="nav-link-collapse collape" href="#link3Comp" data-toggle="collapse">Componente 3</a>
+                                <ul class="sidenav-third-level collapse" id="link3Comp">
+                                    <li>
+                                        <a href="#">Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Link 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                        <a href="#" class="nav-link">
+                            <i class="oi oi-briefcase"></i>
+                            <span class="nav-link-text">Tabelas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                        <a href="#" class="nav-link">
+                            <i class="oi oi-hard-drive"></i>
+                            <span class="nav-link-text">Robôs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                        <a href="#" class="nav-link">
+                            <i class="oi oi-dollar"></i>
+                            <span class="nav-link-text">Tabelas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                        <a href="#" class="nav-link">
+                            <i class="oi oi-rss-alt"></i>
+                            <span class="nav-link-text">Notícias</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                        <a href="#" class="nav-link">
+                            <i class="oi oi-project"></i>
+                            <span class="nav-link-text">Simulador</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                        <a href="#" class="nav-link">
+                            <i class="oi oi-graph"></i>
+                            <span class="nav-link-text">Tendências</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                        <a href="#" class="nav-link">
+                            <i class="oi oi-cog"></i>
+                            <span class="nav-link-text">Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+<!--fechar os icones-->
+                <ul class="navbar-nav sidenav-toggler">
+                    <li class="nav-item">
+                        <a href="" id="sidenavToggler" class="nav-link">
+                            <i class="oi oi-caret-left"></i>
+                        </a>
+                    </li>
+                </ul>
+<!--icones topo-->
+                <ul class="navbar-nav ml-auto">
+<!--Mensagens-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mr-lg 2" href="#" id="msgDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="oi oi-envelope-closed"></i>
+                            <!--dispositivos largos nao aparecem-->
+                            <span class="d-lg-none">Mensagens
+                                <span class="badge badge-pill badge-primary">13 novas</span>
+                            </span>
+                            <span class="indicator text-primary d-none d-lg-block">
+                                <i class="fa fa-fw fa-circle"></i>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="msgDropdown">
+                            <h6 class="dropdown-header">Novas Mensagens</h6>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <strong>Marcos Silva</strong>
+                                <span class="small float-right text-muted">21:15</span>
+                                <div class="dropdown-message small">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                    aliquip ex ea commodo consequat.
+                                </div>
+                                <div class="dropdown-divider"></div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <strong>André Vitor</strong>
+                                <span class="small float-right text-muted">21:15</span>
+                                <div class="dropdown-message small">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                    aliquip ex ea commodo consequat.
+                                </div>
+                                <div class="dropdown-divider"></div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <strong>Maria Helena</strong>
+                                <span class="small float-right text-muted">21:15</span>
+                                <div class="dropdown-message small">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                    aliquip ex ea commodo consequat.
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item small"> Ver todas mensagens</a>
+                            </a>
+                        </div>
+                    </li>
+<!--Alertas-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mr-lg 2" href="#" id="alertDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="oi oi-bell"></i>
+                            <!--dispositivos largos nao aparecerem-->
+                            <span class="d-lg-none">Alertas
+                                <span class="badge badge-pill badge-warning">5 novos</span>
+                            </span>
+                            <span class="indicator text-warning d-none d-lg-block">
+                                <i class="fa fa-fw fa-circle"></i>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="alertDropdown">
+                            <h6 class="dropdown-header">Novos Alertas</h6>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <span class="text-success">
+                                    <strong>
+                                        <i class="fa fa-fw fa-long-arrow-up"></i>
+                                        Atualização
+                                    </strong>
+                                    <span class="small float-right text-muted">21:15</span>
+                                </span>
+                                <div class="dropdown-message small">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                    aliquip ex ea commodo consequat.
+                                </div>
+                                <div class="dropdown-divider"></div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="text-danger">
+                                    <strong>
+                                        <i class="fa fa-fw fa-long-arrow-down"></i>
+                                        Atualização
+                                    </strong>
+                                    <span class="small float-right text-muted">21:15</span>
+                                </span>
+                                <div class="dropdown-message small">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                    aliquip ex ea commodo consequat.
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item small"> Ver todos os Alertas</a>
+                            </a>
+                        </div>
+                    </li>
+<!--busca-->
+                    <li class="nav-item">
+                        <form action="" class="forma-inline my-2 my-lg-0 mr-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Pesquisar por...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-secundary" type="button">
+                                        <i class="oi oi-magnifying-glass"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </li>
+<!--Sair-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="oi oi-account-logout">   Logout  </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+<!--Barra navegação-->
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        card
+                    </li>
+                </ol>
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Card</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--dispositivos grandes col3, em pequenos col6-->
+                    <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-primary o-hidden h-100">
+                            <div class="card-body">
+                                <div class="card-body-icon">
+                                    <i class="fa fa-fw fa-comments"></i>
+                                </div>
+                                <div class="mr-5">
+                                    30 novas msgs
+                                </div>
+                            </div>
+                            <a href="#" class="card-footer text-white clear-fic small z-1">
+                                <span class="float-left">Ver Detalhes</span>
+                                <span class="float-right">
+                                    <i class="fa fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--dispositivos grandes col3, em pequenos col6-->
+                    <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-warning o-hidden h-100">
+                            <div class="card-body">
+                                <div class="card-body-icon">
+                                    <i class="fa fa-fw fa-list"></i>
+                                </div>
+                                <div class="mr-5">
+                                    30 novos alertas
+                                </div>
+                            </div>
+                            <a href="#" class="card-footer text-white clear-fic small z-1">
+                                <span class="float-left">Ver Detalhes</span>
+                                <span class="float-right">
+                                    <i class="fa fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--dispositivos grandes col3, em pequenos col6-->
+                    <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-success o-hidden h-100">
+                            <div class="card-body">
+                                <div class="card-body-icon">
+                                    <i class="fa fa-fw fa-shopping-cart"></i>
+                                </div>
+                                <div class="mr-5">
+                                    26 Novas Vendas
+                                </div>
+                            </div>
+                            <a href="#" class="card-footer text-white clear-fic small z-1">
+                                <span class="float-left">Ver Detalhes</span>
+                                <span class="float-right">
+                                    <i class="fa fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>    
+                    <!--dispositivos grandes col3, em pequenos col6-->
+                    <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-danger o-hidden h-100">
+                            <div class="card-body">
+                                <div class="card-body-icon">
+                                    <i class="fa fa-fw fa-support"></i>
+                                </div>
+                                <div class="mr-5">
+                                    12 Novos Tickets
+                                </div>
+                            </div>
+                            <a href="#" class="card-footer text-white clear-fic small z-1">
+                                <span class="float-left">Ver Detalhes</span>
+                                <span class="float-right">
+                                    <i class="fa fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+<!--rodapé-->
+            <footer class="sticky-footer">
+                <div class="container">
+                    <div class="text-center">
+                        <small>Copyright Autotrend 2020</small>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <script src="bibliotecas/jquery/jquery.min.js" class=""></script>
+    <script src="bibliotecas/bootstrap/js/bootstrap.bundle.min.js" class=""></script>
+    <script src="bibliotecas/jquery-easing/jquery.easing.min.js" class=""></script>
+    <script src="js/sb-admin.min.js" type="text/javascript"></script>
+</body>
+</html>
