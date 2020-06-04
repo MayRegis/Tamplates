@@ -1,95 +1,424 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>    
-    <meta charset="utf-8">
-    <meta name="viewport" contente="width-device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Template</title>
-    <!--CSS-->
-    <link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="bibliotecas/open-iconic-master/font/css/open-iconic-bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/sb-admin.min.css" type="text/css">
-    <style type="text/css">
-        .todo{
-            background-image: url(/img/fundo.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>One Page</title>
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" class="">
+    <!--CSS Personalizado-->
+    <link rel="stylesheet" href="css/estilo.css" class="">
+    <!--Fonte para icones-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
-<body class="todo">
-        <!--navegação-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <a class="navbar-brand" href="index.html">
-                <h5>
-                <img src="/img/logos.png" width="25" height="28" class="d-inline-block align-top">
-                AutoTrend</h5>
-            </a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
-            data-target="#navbarCurso" aria-control="navbarCurso" aria-expanded="false" aria-label="Navegação toogle">
-                <span class="navbar-toggler-icon small"></span>
-            </button>
-            <div id="navbarCurso" class="collapse navbar-collapse">
-                <ul class="navbar-nav navbar-sidenav mx-5">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="oi oi-bar-chart"></i>
-                            <span class="nav-link-text">Indicadores</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="oi oi-briefcase"></i>
-                            <span class="nav-link-text">Negociações</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="oi oi-hard-drive"></i>
-                            <span class="nav-link-text">Robôs</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="oi oi-dollar"></i>
-                            <span class="nav-link-text">Bolsa de valores</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="oi oi-rss-alt"></i>
-                            <span class="nav-link-text">Notícias</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="oi oi-project"></i>
-                            <span class="nav-link-text">Simulador</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="oi oi-graph"></i>
-                            <span class="nav-link-text">Tendências</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="oi oi-graph"></i>
-                            <span class="nav-link-text">Configurações</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="oi oi-graph"></i>
-                            <span class="nav-link-text">Login</span>
-                        </a>
-                    </li>
-                </ul>
+<body>
+    <!--Topo-->
+    <div class="container-fluid bg-topo">
+        <header class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo.png" height="70" class="d-inline-block align-top"> 
+                </a>
+                <!--Botao menu-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="menuColapso">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <!--Menu topo-->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mr-auto text-light">
+                        <li class="nav-item">
+                            <a href="#servicos" class="nav-link text-light font-weight-bold scroll-page">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#parceiros" class="nav-link text-light font-weight-bold scroll-page">Parceiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#cursos" class="nav-link text-light font-weight-bold scroll-page">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contatos" class="nav-link text-light font-weight-bold scroll-page">Contatos</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn col-md-3 btn-orcamento"> Pedir um Orçamento </a>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- Slide imagens -->
+    <div class="container-fluid my-2">
+        <div id="slideShow" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slideShow" data-slide-to="0" class="active"></li>
+                <li data-target="#slideShow" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img src="img/banner1.jpg" class="d-block w-100" alt="Primeiro Slide">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img src="img/banner2.jpg" class="d-block w-100" alt="Segundo Slide">
+                    </a>
+                </div>
             </div>
-        </nav>
-    <script src="bibliotecas/jquery/jquery.min.js" class=""></script>
-    <script src="bibliotecas/bootstrap/js/bootstrap.bundle.min.js" class=""></script>
-    <script src="bibliotecas/jquery-easing/jquery.easing.min.js" class=""></script>
-    <script src="js/sb-admin.min.js" type="text/javascript"></script>
+            <!--Botoes slide-->
+            <a href="#slideShow" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a href="#slideShow" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+    <!--Serviços-->
+    <div id="servicos" class="container-fluid bg-servicos">
+        <div class="mt-2 py-4">
+            <section class="container">
+                <header class="col-md-12">
+                    <h2 class="text-center text-light">O que fazemos?
+                        <span class="underline"></span>
+                    </h2>
+                </header>
+                <div class="row py-4">
+                    <div class="col-md-4">
+                        <img src="img/img1.png" class="img-fluid">
+                        <p class="text-center text-white mt-2">Criação de WebSites Responsivos</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/img2.png" class="img-fluid">
+                        <p class="text-center text-white mt-2">Criação de Aplicativos Android</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/img3.png" class="img-fluid">
+                        <p class="text-center text-white mt-2">Otimização de Sites na Web</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--Parceiros-->
+    <div id="parceiros" class="container-fluid py-4 bg-parceiros">
+        <div class="py-2">
+            <div class="container">
+                <header class="col-md-12">
+                    <h2 class="text-center">Conheça nossos parceiros
+                        <span class="underline"></span>
+                    </h2>
+                </header>
+                <div class="row py-4">
+                    <div class="col-md-2 padding-parceiros">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="img/parceiro1.png" class="img-fluid mx-auto d-block">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 padding-parceiros">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="img/parceiro2.png" class="img-fluid mx-auto d-block">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 padding-parceiros">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="img/parceiro1.png" class="img-fluid mx-auto d-block">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 padding-parceiros">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="img/parceiro2.png" class="img-fluid mx-auto d-block">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 padding-parceiros">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="img/parceiro1.png" class="img-fluid mx-auto d-block">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 padding-parceiros">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="img/parceiro2.png" class="img-fluid mx-auto d-block">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Paralax-->
+    <div class="container-fluid bg-parallax">
+        <div class="py-4">
+            <section class="container">
+                <header class="col-md-12">
+                    <h2 class="text-center text-light">Tecnologia
+                        <span class="underline"></span>
+                    </h2>
+                    <p class="text-center text-light"> Um conjunto de técnicas, habilidades, métodos e processos usados na produção de bens ou serviços, ou na realização objetivos, como por exemplo em investigações científicas. O termo tecnologia pode ser usado para representar tanto o domínio de técnicas e processos, quanto a implementação de funcionalidades em máquinas para que essas possam ser operadas sem o pleno conhecimento do seu funcionamento interno.</p>
+                </header>
+                <div class="row py-2">
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="fatos">
+                            <div class="icon">
+                                <i class="fa fa-clock"></i>
+                            </div>
+                            <div class="fatos-contador">
+                                <h3>+<span class="contar">43678</span></h3>
+                                <h4>Minutos de conteúdo</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="fatos">
+                            <div class="icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <div class="fatos-contador">
+                                <h3><span class="contar">16</span></h3>
+                                <h4>Certificados</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="fatos">
+                            <div class="icon">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <div class="fatos-contador">
+                                <h3><span class="contar">34032</span></h3>
+                                <h4>Usuarios</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="fatos">
+                            <div class="icon">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="fatos-contador">
+                                <h3><span class="contar">4.5</span></h3>
+                                <h4>Média de Avalição</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--Cursos-->
+    <div id="cursos" class="container-fluid">
+        <div class="my-2 py-4">
+            <section class="container">
+                <header class="col-md-12">
+                    <h2 class="text-center">Curso 90% off
+                        <span class="underline"></span>
+                    </h2>
+                </header>
+                <div class="row py-4">
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="tabela-preco sombra">
+                            <div class="preco-detalhe">
+                                <h2>Framework PHP Laravel 5.6</h2>
+                                <strike>R$ 359,99</strike>
+                                <span class="">R$ 59.99</span>
+                                <ul class="">
+                                    <li> Vídeo sob demanda de 5h </li>
+                                    <li> + 40 video aulas </li>
+                                    <li> Acesso total e vitalício </li>
+                                    <li> Certificado de Conclusão </li>
+                                </ul>
+                            </div>
+                            <div class="preco-botao">
+                                <a href="#" class="btn btn-preco">Comprar</a>
+                            </div>
+                            <small>Garantia de satisfação de 30 dias</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="tabela-preco sombra">
+                            <div class="preco-detalhe">
+                                <h2>Framework PHP Laravel 5.6</h2>
+                                <strike>R$ 359,99</strike>
+                                <span class="">R$ 59.99</span>
+                                <ul class="">
+                                    <li> Vídeo sob demanda de 5h </li>
+                                    <li> + 40 video aulas </li>
+                                    <li> Acesso total e vitalício </li>
+                                    <li> Certificado de Conclusão </li>
+                                </ul>
+                            </div>
+                            <div class="preco-botao">
+                                <a href="#" class="btn btn-preco">Comprar</a>
+                            </div>
+                            <small>Garantia de satisfação de 30 dias</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="tabela-preco sombra">
+                            <div class="preco-detalhe">
+                                <h2>Framework PHP Laravel 5.6</h2>
+                                <strike>R$ 359,99</strike>
+                                <span class="">R$ 59.99</span>
+                                <ul class="">
+                                    <li> Vídeo sob demanda de 5h </li>
+                                    <li> + 40 video aulas </li>
+                                    <li> Acesso total e vitalício </li>
+                                    <li> Certificado de Conclusão </li>
+                                </ul>
+                            </div>
+                            <div class="preco-botao">
+                                <a href="#" class="btn btn-preco">Comprar</a>
+                            </div>
+                            <small>Garantia de satisfação de 30 dias</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="tabela-preco sombra">
+                            <div class="preco-detalhe">
+                                <h2>Framework PHP Laravel 5.6</h2>
+                                <strike>R$ 359,99</strike>
+                                <span class="">R$ 59.99</span>
+                                <ul class="">
+                                    <li> Vídeo sob demanda de 5h </li>
+                                    <li> + 40 video aulas </li>
+                                    <li> Acesso total e vitalício </li>
+                                    <li> Certificado de Conclusão </li>
+                                </ul>
+                            </div>
+                            <div class="preco-botao">
+                                <a href="#" class="btn btn-preco">Comprar</a>
+                            </div>
+                            <small>Garantia de satisfação de 30 dias</small>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+        </div>
+    </div>
+    <!--Rodapé-->
+    <footer id="contatos" class="container-fluid bg-rodape1">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-light align-middle">
+                        <i class="fas fa-info-circle fa-2x mr-2 text-light"></i>
+                        Cursos mais visitados
+                    </h5>
+                    <ul class="text-light">
+                        <li>
+                        <a href="#" class="text-light"><i class="fa fa-angle-right"></i> PHP Intermediário</a>
+                        </li>
+                        <li>
+                        <a href="#" class="text-light"><i class="fa fa-angle-right"></i> Framwork Bootstrap 4</a>
+                        </li>
+                        <li>
+                        <a href="#" class="text-light"><i class="fa fa-angle-right"></i> jQuery Básico</a>
+                        </li>
+                        <li>
+                        <a href="#" class="text-light"><i class="fa fa-angle-right"></i> Framework Laravel 5.6</a>
+                        </li>
+                        <li>
+                        <a href="#" class="text-light"><i class="fa fa-angle-right"></i> Desenvolvimento Android</a>
+                        </li>
+                        <li>
+                        <a href="#" class="text-light"><i class="fa fa-angle-right"></i> Temas para WordPress</a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="text-light">Sobre a PontoCOM <span class="underline-footer"></span></h6>
+                            <ul class="text-light">
+                                <li>
+                                    <a href="#" class="text-light">Quem somos</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-light">Parceiros</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-light">Portifólio</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-light">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-light"> Ponto Cursos <span class="underline-footer"></span></h6>
+                            <ul class="text-light">
+                                <li>
+                                    <a href="#" class="text-light">O que é?</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-light">Cursos Disponíveis</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-light">Intrutores</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-light">Material</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md4">
+                    <div class="card text-light md-3 bg-card-rodape">
+                        <div class="card-body">
+                            <h4 class="card-title"> <i class="far fa-building mr-2 fa-2x icon-banner-rodape"></i> Traga sua empresa</h4>
+                            <p class="card-text text-justify">Peça um orçamento sem compromisso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Rodapé 2-->
+    <div class="container-fluid bg-rodape2">
+        <div class="container py-4">
+            <img src="img/original.png" class="img-fluid mx-auto d-block">
+            <div class="text-center pt-1">
+                <a href="#" class="icone-social" target="_blank"><i class="fab fa-facebook-square fa--lg"></i></a>
+                <a href="#" class="icone-social" target="_blank"><i class="fab fa-youtube fa--lg"></i></a>
+                <a href="#" class="icone-social" target="_blank"><i class="fab fa-instagram fa--lg"></i></a>
+                <a href="#" class="icone-social" target="_blank"><i class="fab fa-twitter-square fa--lg"></i></a>
+                <a href="#" class="icone-social" target="_blank"><i class="fab fa-linkedin fa--lg"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--JS Bootstrap-->
+    <script src="js/jquery-min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!--Contador-->
+    <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
+    <script src="js/waypoints.min.js" type="text/javascript"></script>
+    <!--JS Personalizado-->
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
